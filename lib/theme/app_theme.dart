@@ -1,6 +1,6 @@
 import 'package:azkary_app/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+// import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
@@ -10,15 +10,15 @@ class AppTheme {
         centerTitle: true,
         backgroundColor: greenColor,
         elevation: 0,
-        iconTheme: IconThemeData(size: 30.w),
+        iconTheme: const IconThemeData(size: 30),
       ),
       textTheme: TextTheme(
         bodySmall: GoogleFonts.elMessiri(
-            fontSize: 12.sp, fontWeight: FontWeight.w600, color: Colors.black),
+            fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
         bodyMedium: GoogleFonts.elMessiri(
-            fontSize: 20.sp, fontWeight: FontWeight.w700, color: Colors.black),
+            fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black),
         bodyLarge: GoogleFonts.elMessiri(
-            fontSize: 25.sp, fontWeight: FontWeight.w700, color: Colors.black),
+            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData());
   static ThemeData darkMode = ThemeData(
@@ -27,15 +27,15 @@ class AppTheme {
         centerTitle: true,
         backgroundColor: grayColor,
         elevation: 0,
-        iconTheme: IconThemeData(size: 30.w),
+        iconTheme: const IconThemeData(size: 30),
       ),
       textTheme: TextTheme(
         bodySmall: GoogleFonts.elMessiri(
-            fontSize: 12.sp, fontWeight: FontWeight.w600, color: Colors.black),
+            fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
         bodyMedium: GoogleFonts.elMessiri(
-            fontSize: 20.sp, fontWeight: FontWeight.w700, color: Colors.black),
+            fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black),
         bodyLarge: GoogleFonts.elMessiri(
-            fontSize: 25.sp, fontWeight: FontWeight.w700, color: Colors.black),
+            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData());
 }
