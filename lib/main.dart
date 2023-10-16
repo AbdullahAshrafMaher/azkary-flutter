@@ -7,7 +7,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'providers/language_provider.dart';
 
-void main(List<String> args) {
+void main(List<String> args) async{
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => ThemeProvider()),
     ChangeNotifierProvider(create: (_) => LanguageProvider()),
@@ -19,7 +19,7 @@ class AzkaryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themePro = Provider.of<ThemeProvider>(context);
+     final themePro = Provider.of<ThemeProvider>(context);
     final languagePro = Provider.of<LanguageProvider>(context);
 
     return ScreenUtilInit(
