@@ -12,19 +12,22 @@ class ProgressTab extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Progress'),
       ),
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        // padding: const EdgeInsets.all(12),
-        children: [
-          Expanded(
-            flex: 1,
-            child: Chart(),
-          ),
-          Expanded(
-            flex: 1,
-            child: ProgressTable(),
-          ),
-        ],
+      body: Container(
+        padding: const EdgeInsets.all(10),
+        child: const Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          // padding: const EdgeInsets.all(12),
+          children: [
+            Expanded(
+              flex: 1,
+              child: Chart(),
+            ),
+            Expanded(
+              flex: 1,
+              child: ProgressTable(),
+            ),
+          ],
+        ),
       ),
     );
   }
